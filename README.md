@@ -131,12 +131,12 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 
 <small>chúng quá nhỏ </small> so với bình thường
 
-| Cột 1 | Cột 2 | Cột 3 | Cột 4 | Cột 5|
-| :--- | :--- | :--- | :--- | :--- |
-| A | B | C | D | ffdg|
+| Cột 1 | Cột 2 | Cột 3 | Cột 4 |
+| :--- | :--- | :--- | :--- | 
+| A | B | C | D |
 | E | F | G | H |
 | I | K | L | M |
-| chúng ta| không là ai | mà cứ nói| sdf|
+
 
 - [ ] Checkbox
 - [x] Checked
