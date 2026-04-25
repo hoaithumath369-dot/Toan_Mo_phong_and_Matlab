@@ -33,6 +33,22 @@ Gồm 7 chương
     - []
 ---
 
+# Mục lục
+- [Mục lục](#mục-lục)
+  - [Chương 1: Vai trò của mô hình hóa hệ thống](#chương-1-vai-trò-của-mô-hình-hóa-hệ-thống)
+    - [1.1. Khái niệm mở đầu- Mục lục](#11-khái-niệm-mở-đầu--mục-lục)
+    - [1.2. Lệnh hệ thống \& Cú pháp cơ bản](#12-lệnh-hệ-thống--cú-pháp-cơ-bản)
+  - [Chương 2: Giới thiệu cơ bản về Matlab](#chương-2-giới-thiệu-cơ-bản-về-matlab)
+    - [Hàm toán học và số phức](#hàm-toán-học-và-số-phức)
+      - [2.1. Toán học cơ bản](#21-toán-học-cơ-bản)
+      - [2.2. Làm tròn số](#22-làm-tròn-số)
+      - [2.3. Số phức ($z = a + bi$)](#23-số-phức-z--a--bi)
+    - [Nhập/Xuất \& Định dạng dữ liệu](#nhậpxuất--định-dạng-dữ-liệu)
+      - [2.4. Định dạng hiển thị (format)](#24-định-dạng-hiển-thị-format)
+      - [2.5. Nhập/Xuất dữ liệu](#25-nhậpxuất-dữ-liệu)
+      - [2.6. Thao tác với File](#26-thao-tác-với-file)
+
+
 
 ## Chương 1: Vai trò của mô hình hóa hệ thống
 
