@@ -217,7 +217,54 @@ isempty(A): trả về mảng có giá trị hay mảng rỗng
 
 ## Chương 5: Đồ họa trong Matlab
 
-đây là chương 5 được giới thiệu
+Các bước để vẽ hàm  
+b1: chuẩn bị dữ liệu  
+x=[xA xB]  
+y=[yA yB]  
+kích thước của vecto hoành độ và tung độ bằng nhau  
+b2: chọn cửa sổ vẽ và vùng vẽ  
+k chọn cửa sổ vẽ -> tạo ra cửa sổ mới (tạm)  
+	figure: tạo 1 cửa sổ vẽ mới  
+	subplot: chia 1 cửa sổ thành nhiều vị trí khác nhau  
+	subplot(m,n,p) m: hàng, n: cột, p:vị trí vẽ  
+b3: gọi hàm vẽ: plot(x,y)  
+	>> t=linspace(0,2*pi,100);  
+	>> plot(t,sin(t))  
+	>> subplot(2,1,1)  
+	>> subplot(2,1,1)  
+	>> plot(t,sin(t))  
+	>> subplot(2,1,2)  
+	>> plot(t,cos(t))  
+	>> plot(t,2*sin(t))  
+
+plot(x,y,'định dạng đồ thị'):  
+Định dạng: nét vẽ, màu sắc, điểm  
+y: vèi bằng nét liền -  
+m: bẽ bằng nét đức dài --  
+	>> plot(t,2*sin(t),'r--')  
+
+hold on: cho phép vẽ cùng lúc nhiều đồ thị trên 1 cửa sổ vẽ  
+	>> xlabel('Truc x')  
+
+b4-b6: tính chỉnh đồ thị  
+	>> xlabel('Truc x')  
+legend('tên')  
+	>> legend('sin(t)','2cos(t)')  
+axis([xmin xmax ymin ymax]): cấu trúc điều chỉnh độ dài trục  
+	>> axis([0 10 -2 2])  
+	axis equal: chia 1 đơn vị trên trục x và 1 đơn vị trên trục y bằng nhau  
+text(vị trí,'text')  
+gtext('day la vi tri diem A'): thêm 1 điểm trực tiếp trên đồ thị, chỉ bằng con chuột  
+	>> gtext('Toa do diem A'): đưa vào bằng con chuột  
+	>> text(1,3,'Toa do diem B'): chỉ đúng vị trí cần đưa vào,  
+		theo x,y  
+
+tô màu trong matlab  
+fill(x,y,'màu vẽ')  
+'màu vẽ': 'r',   
+1 0 0  
+R G B(100% red,...)  
+fill(x,y,[0 1 0])  
 
 ## Chương 6: Lập trình giao diện người dùng GUI
 
