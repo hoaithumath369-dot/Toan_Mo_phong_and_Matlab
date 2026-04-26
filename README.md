@@ -101,8 +101,8 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 
 #### 2.4. Định dạng hiển thị (format)
 
-- `format short`: Hiển thị 4 chữ số.
-- `format long`: Hiển thị 15 chữ số.
+- `format short`: Hiển thị 4 chữ số sau dấu thập phân. ***Đây là cài đặt số mặc định.***  
+- `format long`: Hiển thị 15 chữ số sau dấu thập phân.
 - `format rat`: Hiển thị dưới dạng phân số.  
 	<h4>Ví dụ:</h4>  
 	
