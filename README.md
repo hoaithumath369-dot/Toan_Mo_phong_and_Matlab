@@ -103,7 +103,10 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 
 - `format short`: Hiển thị 4 chữ số.
 - `format long`: Hiển thị 15 chữ số.
-- `format rat`: Hiển thị dưới dạng phân số.
+- `format rat`: Hiển thị dưới dạng phân số.  
+	<h4>Ví dụ:</h4>  
+	
+  ![image format](file_images/image_format.png)
 
 #### 2.5. Nhập/Xuất dữ liệu
 
