@@ -170,6 +170,49 @@ C(1,: ): tất cả các cột trên hàng1
 C(:,2): : là tất cả các hàng, 2 là tất cả các cột 2  
 C(:, [2 4])  
 C(:,2:2:4)  
+
+THAO TÁC TRÊN WEB VÀ MA TRẬN  
+size(x): trả về kích thước của ma trận(số hàng và số cột)  
+length(x): tìm kiếm chiều dài của vecto x (Kích thước của vecto 	
+
+TÍNH TOÁN VỚI VECTO VÀ MA TRẬN  
+TẠO VECTO HÀNG--> CHUYỂN VỊ-->CHUYỂN HÀNG THÀNH CỘT  
+y=x'(dùng dấu nháy để chuyển từ hàng thành cột  
+transpose(x): lệnh để chuyển từ cột thành hàng  
+NHÂN MA TRẬN  
+A+B  
+A-B  
+A*B  
+NHÂN TỪNG PHẦN TỬ: A.*B(cùng kích thước)  
+A11*B11, A12*B12,....  
+A./B(A11/B11, A12*/B12,....  
+
+format rat: hiển thị phân số  
+X3.^2: thêm dấu chấm trc pt để dùng hàm mũ  
+
+TÌM GIÁ TRỊ LỚN NHẤT, NHỎ NHẤT:Thao tác theo cột(cột 11+cột 12)  
+sum(A):   
+sum(sum(A): cho phép tính tổng các phần tử của A  
+min(A): tìm phần tử bé nhất trên mảng A  
+
+CÁC PHÉP TOÁN QUAN HỆ VÀ LOGIC  
+ĐÚNG LÀ TRẢ VỀ 1, SAI LÀ 0(LOGIC)  
+2>0--> đúng-->trả về 1(sai trả về 0)  
+A>2: lấy từng pt của mảng A so sánh với 2  
+so sánh bằng nhau, không bằng: ==,~=  
+và(&), hoặc(|), không(~)  
+
+any()tìm trong ma trận A có bất kì ptu nào có gtri bằng 0 hay không  
+Thao tác trên các cột, tìm trên mảng A khác 0-->trả về 1  
+all(A): tìm trên mảng A, mỗi cột có khác 0 hay k  
+có 1 pt khác 0, 1 pt bằng 0--> trả về 0  
+find(A): tìm theo dk logic,  
+find(A>4):tìm trong mảng A các pt lớn hơn 4,  
+trả về vị trí của pt thõa mãn dk logic ở bên trong.  
+không trả về số, trả về chỉ số, vị trí (các đánh chỉ số(theo cột)  
+exist(a): ktr mảng a, nếu có-->1, không->0  
+isempty(A): trả về mảng có giá trị hay mảng rỗng  
+
 ## Chương 4: Lập trình trong MATLAB 
 
 ## Chương 5: Đồ họa trong Matlab
