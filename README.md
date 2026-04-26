@@ -27,14 +27,12 @@ Gồm 7 chương
       - [2.5. Nhập/Xuất dữ liệu](#25-nhậpxuất-dữ-liệu)
       - [2.6. Thao tác với File](#26-thao-tác-với-file)
   - [Chương 3: Ma trận và vecto](#chương-3-ma-trận-và-vecto)
-    - [I. Khai báo Vector và Ma trận](i-khai-báo-vector-và-ma-trận)
-      - [Toán học cơ bản](#toán-học-cơ-bản)
-    - [Làm tròn số](#làm-tròn-số)
-    - [Số phức (z = a + bi)](#số-phức-z--a--bi)
+    - [I. Khai báo Vector và Ma trận](#i-khai-báo-vector-và-ma-trận)
+    - [II. Thao tác và Truy xuất dữ liệu](#ii-thao-tác-và-truy-xuất-dữ-liệu)
+    - [III. Tính toán với Vector và Ma trận](#iii-tính-toán-với-vector-và-ma-trận)
+    - [IV. Phép toán Quan hệ và Logic](#iv-phép-toán-quan-hệ-và-Logic)
   - [Chương 4: Lập trình trong Matlab](#chương-4-lập-trình-trong-matlab)
-    - [Định dạng hiển thị (format)](#định-dạng-hiển-thị-format)
-    - [Nhập/Xuất dữ liệu](#nhậpxuất-dữ-liệu)
-    - [Thao tác với File](#thao-tác-với-file)
+    - []
   - [Chương 5: Đồ họa trong Matlab](#chương-5-đồ-họa-trong-matlab)
     - []
   - [Chương 6: Lập trình giao diện người dùng GUI](#chương-6-lập-trình-giao-diện-người-dùng-gui)
@@ -148,7 +146,7 @@ x=0:5:100
 +logspace(a,b,n): dùng để vẽ biểu đồ bode trong matlap(a,b: 10 mũ a,,,)  
 logspace(1,3,3): 10^1,10^2,chia 3 điểm:10 100 1000  
 
-- Khai báo vecto cột: 
+- Khai báo vecto cột:  
 ***mở ngoặc vuông và khai báo từng phần tử***
 trong cùng 1 hàng, cách nhau dấu phẩy hoặc khoảng trắng, các hàng cách nhau bởi dấu chấm phẩy hoặc xuống dòng  
 y=[1;3;5]  
