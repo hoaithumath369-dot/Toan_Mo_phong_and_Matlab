@@ -18,11 +18,11 @@ Gồm 7 chương
     - [1.1. Khái niệm mở đầu](#11-khái-niệm-mở-đầu)
     - [1.2. Lệnh hệ thống \& Cú pháp cơ bản](#12-lệnh-hệ-thống--cú-pháp-cơ-bản)
   - [Chương 2: Giới thiệu cơ bản về Matlab](#chương-2-giới-thiệu-cơ-bản-về-matlab)
-    - [Hàm toán học và số phức](#hàm-toán-học-và-số-phức)
+    - [I. Hàm toán học và số phức](#i-hàm-toán-học-và-số-phức)
       - [2.1. Toán học cơ bản](#21-toán-học-cơ-bản)
       - [2.2. Làm tròn số](#22-làm-tròn-số)
       - [2.3. Số phức (z = a + bi)](#23-số-phức-z--a--bi)
-    - [Nhập/Xuất \& Định dạng dữ liệu](#nhậpxuất--định-dạng-dữ-liệu)
+    - [II. Nhập/Xuất \& Định dạng dữ liệu](#ii-nhậpxuất--định-dạng-dữ-liệu)
       - [2.4. Định dạng hiển thị (format)](#24-định-dạng-hiển-thị-format)
       - [2.5. Nhập/Xuất dữ liệu](#25-nhậpxuất-dữ-liệu)
       - [2.6. Thao tác với File](#26-thao-tác-với-file)
@@ -72,8 +72,8 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 | `%` / `Ctrl + R` | Tạo ghi chú (comment) trong code. |
 
 ## Chương 2: Giới thiệu cơ bản về Matlab
-### Hàm toán học và số phức
-#### 2.1. Toán học cơ bản
+### I. Hàm toán học và số phức
+#### 2.1 Toán học cơ bản
 
 - `sqrt(x)`: Căn bậc 2.
     VD: `sqrt(4) = 2`: $\sqrt{4} = 2$ 
@@ -97,7 +97,7 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 - `angle(z)`: Tính góc pha (argument) theo radian.
   *(Mẹo đổi sang độ: `angle(z) * 180 / pi` hoặc dùng hàm `rad2deg`).*
 ---
-### Nhập/Xuất & Định dạng dữ liệu
+### II. Nhập/Xuất & Định dạng dữ liệu
 
 #### 2.4. Định dạng hiển thị (format)
 
@@ -125,6 +125,9 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
   fclose(fid);
 
 ## Chương 3: Ma trận và Vecto
+
+###
+
 Khai báo vecto hàng: đc cách nhau dấu phẩy hoặc khoảng trống  
 x=[8 9 10], x=7,8,9] 
 -Khai báo trực tiếp:  
@@ -266,10 +269,11 @@ R G B(100% red,...)
 fill(x,y,[0 1 0])  
 
 ## Chương 6: Lập trình giao diện người dùng GUI
-
+(Nội dung đang được cập nhật...)
 ## Chương 7: SIMULINK và ứng dụng
+(Nội dung đang được cập nhật...)
 
-
+---
 Đây là chữ bình thường, đây là <big> chữ to </big> bình thường <small> chữ nhỏ </small>  
 đây là <span style="color: red">màu <big>đỏ</big> tươi thắm</span> nhưng *lại* **rất** ***đẹp***
 
