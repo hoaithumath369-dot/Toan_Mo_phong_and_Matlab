@@ -43,6 +43,8 @@ Gồm 7 chương
 
 ## Chương 1: Vai trò của mô hình hóa hệ thống
 
+[Slide Chương 1](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C1.pdf)
+
 ### 1.1. Khái niệm mở đầu
 
 **Vai trò của Mô hình hóa hệ thống:**
@@ -71,6 +73,9 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 | `%` / `Ctrl + R` | Tạo ghi chú (comment) trong code. |
 
 ## Chương 2: Giới thiệu cơ bản về Matlab
+
+[Slide Chương 2](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C2.pdf)
+
 ### I. Hàm toán học và số phức
 #### 2.1 Toán học cơ bản
 
@@ -127,7 +132,7 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
   fclose(fid);
   ```
 
-## Chương 3: Ma trận và Vecto
+## Chương 3: Ma trận và Vecto [Slide Chương 3](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C3.pdf)
 
 ### I. Khai báo Vector và Ma trận
 
