@@ -353,4 +353,18 @@ int main(){
 	return 0;
 }
 ```
+
+<details>
+  <summary>Bấm vào đây để xem toàn bộ mã lệnh</summary>
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hệ thống khởi động thành công!\n");
+    return 0;
+}
+```
+</details>
+
 kết thúc code ta thấy cũng khá ổn
