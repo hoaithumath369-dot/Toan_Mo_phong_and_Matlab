@@ -1,5 +1,5 @@
 nói về BT giữa kỳ
-# ĐỀ BÀI 01 ([Lời Giải](BT_KT_GKy/De_01))
+# ĐỀ BÀI 01 ([Lời Giải](#BT_KT_GKy/De_01))
 ## Bài 1 (7 đ):  Một ma trận C được tạo thành theo công thức (ghi trên bảng).  
 - Vector x có kích thước m, vector y có kích thước n.  
 - Các phần tử của x, y được nhập từ bàn phím.  
