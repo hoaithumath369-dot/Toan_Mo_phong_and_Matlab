@@ -43,8 +43,7 @@ Gồm 7 chương
 
 ## Chương 1: Vai trò của mô hình hóa hệ thống
 
-
-[Slide Chương 1](file-tai-lieu/matlab-và-ứng-dụng-c1.pdf)
+[Slide Chương 1](./file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C1.pdf)
 
 ### 1.1. Khái niệm mở đầu
 
