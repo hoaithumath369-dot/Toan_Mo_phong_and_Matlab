@@ -74,7 +74,7 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 
 ## Chương 2: Giới thiệu cơ bản về Matlab
 
-[Slide Chương 2](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C2.pdf)
+[Slide Chương 2](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C2.pdf)
 
 ### I. Hàm toán học và số phức
 #### 2.1 Toán học cơ bản
@@ -133,6 +133,8 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
   ```
 
 ## Chương 3: Ma trận và Vecto [Slide Chương 3](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C3.pdf)
+
+[Slide Chương 3](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C3.pdf)
 
 ### I. Khai báo Vector và Ma trận
 
@@ -250,7 +252,13 @@ không trả về số, trả về chỉ số, vị trí (các đánh chỉ số
 
 ## Chương 4: Lập trình trong MATLAB 
 
+[Slide Chương 4](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C4.pdf)
+
+Đang cập nhật
+
 ## Chương 5: Đồ họa trong Matlab
+
+[Slide Chương 5](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C5.pdf)
 
 Các bước để vẽ hàm  
 b1: chuẩn bị dữ liệu  
@@ -302,7 +310,11 @@ R G B(100% red,...)
 fill(x,y,[0 1 0])  
 
 ## Chương 6: Lập trình giao diện người dùng GUI
+
+[Slide Chương 6](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C6_ÁP%20DỤNG.pdf)
+
 (Nội dung đang được cập nhật...)
+
 ## Chương 7: SIMULINK và ứng dụng
 (Nội dung đang được cập nhật...)
 
