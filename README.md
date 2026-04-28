@@ -125,6 +125,7 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
   fid = fopen('baitap.txt', 'w');
   fprintf(fid, '%f', a);
   fclose(fid);
+  ```
 
 ## Chương 3: Ma trận và Vecto
 
@@ -210,8 +211,8 @@ min(A): tìm phần tử bé nhất trên mảng A
 ĐÚNG LÀ TRẢ VỀ 1, SAI LÀ 0(LOGIC)  
 2>0--> đúng-->trả về 1(sai trả về 0)  
 A>2: lấy từng pt của mảng A so sánh với 2  
-so sánh bằng nhau, không bằng: ==,~=  
-và(&), hoặc(|), không(~)  
+so sánh bằng nhau: `==`, không bằng: `~=`  
+và `&` , hoặc `|`, không `~`   
 
 any()tìm trong ma trận A có bất kì ptu nào có gtri bằng 0 hay không  
 Thao tác trên các cột, tìm trên mảng A khác 0-->trả về 1  
