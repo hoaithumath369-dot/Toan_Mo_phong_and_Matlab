@@ -1,12 +1,12 @@
 # Toan_Mo_phong_and_Matlab
 
-Đây là nơi ghi lại quá trình học môn Toán mô phỏng và Matlab
+Đây là nơi ghi lại quá trình học môn *Toán mô phỏng và Matlab*
 
 # 📘 TỔNG HỢP KIẾN THỨC MATLAB & MÔ HÌNH HÓA HỆ THỐNG
 
-Tài liệu này tổng hợp các lệnh cơ bản trong MATLAB, thao tác với biến, ma trận, đồ thị 2D và một số bài tập ứng dụng (như giải bài toán động học cơ cấu tay quay con trượt).
+Tài liệu này tổng hợp các lệnh cơ bản trong **MATLAB**, thao tác với biến, ma trận, đồ thị 2D và một số bài tập ứng dụng (như giải bài toán động học cơ cấu tay quay con trượt).
 - Bạn có thể thoải mái đóng góp (contribute) hoặc liên kết (fork) dự án này.
-- Có thể tìm hiều thêm viết bằng ngôn ngữ Markdown để ghi chú, note,... rất dễ để viết.
+- Có thể tìm hiều thêm viết bằng ngôn ngữ **Markdown** để ghi chú, note,... rất dễ để viết.
 - Vô đây để [Bình luận](https://github.com/Agatha-Belle-atb/Toan_Mo_phong_and_Matlab/issues)
 ---
 Gồm 7 chương
@@ -132,6 +132,10 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
   fclose(fid);
   ```
 
+### III. Bài Tập trong Slide
+
+Đang cập nhật...  
+
 ## Chương 3: Ma trận và Vecto [Slide Chương 3](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C3.pdf)
 
 [Slide Chương 3](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C3.pdf)
@@ -223,8 +227,8 @@ THAO TÁC TRÊN WEB VÀ MA TRẬN
 - `A-B` là **trừ** hai ma trận
 - `A*B`  là **nhân** hai ma trận
 - ***NHÂN TỪNG PHẦN TỬ*** `A.*B` **(cùng kích thước)**
-  - `A.*B` là `A11*B11, A12*B12,...`,$a_{nn}*b_{nn}$
-  - `A./B` là `A11/B11, A12*/B12,....`,$a_{nn}/b_{nn}$  
+  - `A.*B` là $A_{11}*B_{11}$, $A_{12}*B_{12}$,..., $A_{mn}*B_{mn}$  
+  - `A./B` là $A_{11}/B_{11}$, $A_{12}/B_{12}$,..., $A_{mn}/B_{mn}$  
 
   - `format rat`: hiển thị phân số  
   - `x3.^2`: thêm dấu chấm trước pt để dùng hàm mũ  
@@ -250,27 +254,34 @@ không trả về số, trả về chỉ số, vị trí (các đánh chỉ số
   - `exist(a)`: ktr mảng a, nếu có-->1, không->0  
   - `isempty(A)`: trả về mảng có giá trị hay mảng rỗng  
 
+### V. Bài Tập trong Slide
+
+Đang cập nhật...  
+
 ## Chương 4: Lập trình trong MATLAB 
 
 [Slide Chương 4](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C4.pdf)
 
-Đang cập nhật
+Đang cập nhật...  
 
 ## Chương 5: Đồ họa trong Matlab
 
 [Slide Chương 5](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C5.pdf)
 
-Các bước để vẽ hàm  
-b1: chuẩn bị dữ liệu  
+### I. Đồ hoạ 2D
+#### 5.1. Các bước để sử dụng hàm vẽ
+
+
+- Bước 1: chuẩn bị dữ liệu  
 x=[xA xB]  
 y=[yA yB]  
 kích thước của vecto hoành độ và tung độ bằng nhau  
-b2: chọn cửa sổ vẽ và vùng vẽ  
+- Bước 2: chọn cửa sổ vẽ và vùng vẽ trong cửa sổ  
 k chọn cửa sổ vẽ -> tạo ra cửa sổ mới (tạm)  
 	figure: tạo 1 cửa sổ vẽ mới  
 	subplot: chia 1 cửa sổ thành nhiều vị trí khác nhau  
 	subplot(m,n,p) m: hàng, n: cột, p:vị trí vẽ  
-b3: gọi hàm vẽ: plot(x,y)  
+- Bước 3: gọi hàm vẽ: plot(x,y)  
 	>> t=linspace(0,2*pi,100);  
 	>> plot(t,sin(t))  
 	>> subplot(2,1,1)  
@@ -309,6 +320,41 @@ fill(x,y,'màu vẽ')
 R G B(100% red,...)  
 fill(x,y,[0 1 0])  
 
+<details>
+  <summary>Bài tập vẽ Cầu vòng bằng nửa đường tròn màu ngẫu nhiên  
+  	- Nhập đầu vào
+  </summary>
+	
+```matlab
+clc; clear; close all;
+
+r_min = input('Nhap ban kinh nho nhat: ');
+n = input('Nhap so vong: ');
+R = r_min * n;
+
+theta = linspace(0, pi, 200);
+hold on;
+
+for i = 1:n
+    r1 = R*(n-i+1)/n;
+    r2 = R*(n-i)/n;
+    
+    x = [r1*cos(theta) r2*cos(theta)];
+    y = [r1*sin(theta) r2*sin(theta)];
+    
+    fill(x, y, rand(1,3), 'EdgeColor','k');
+end
+axis equal;
+grid on;
+```
+</details>
+
+### II. Đồ hoạ 3D
+
+### |...|. Bài tập trong Slide
+
+Đang cập nhật...
+
 ## Chương 6: Lập trình giao diện người dùng GUI
 
 [Slide Chương 6](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C6_ÁP%20DỤNG.pdf)
@@ -318,6 +364,7 @@ fill(x,y,[0 1 0])
 ## Chương 7: SIMULINK và ứng dụng
 (Nội dung đang được cập nhật...)
 
+---
 ---
 Đây là chữ bình thường, đây là <big> chữ to </big> bình thường <small> chữ nhỏ </small>  
 đây là <span style="color: red">màu <big>đỏ</big> tươi thắm</span> nhưng *lại* **rất** ***đẹp***
@@ -377,5 +424,46 @@ int main() {
 }
 ```
 </details>
+
+A<sub>11</sub> * B<sub>11</sub> và A<sub>12</sub> * B<sub>12</sub>  
+
+$A_{11} \cdot B_{11}$ và $A_{12} \cdot B_{12}$  
+$A_{11}*B_{11}$ và $A_{12}*B_{12}$
+
+<details>
+  <summary>Bài tập: Vẽ Cầu vồng bằng nửa đường tròn màu ngẫu nhiên</summary>
+  <p><strong>Yêu cầu bài toán:</strong></p>
+  <ul>
+	<li>Nhập đầu vào bán kính nhỏ nhất (Ví dụ: R = 3).</li>
+    <li>Nhập đầu vào: Số lượng lớp cầu vồng (Ví dụ: N = 4).</li>
+    <li>Sử dụng lệnh vẽ đồ thị 2D để tạo các nửa đường tròn đồng tâm.</li>
+  </ul>
+
+```matlab
+clc; clear; close all;
+
+r_min = input('Nhap ban kinh nho nhat: ');
+n = input('Nhap so vong: ');
+R = r_min * n;
+
+theta = linspace(0, pi, 200);
+hold on;
+
+for i = 1:n
+    r1 = R*(n-i+1)/n;
+    r2 = R*(n-i)/n;
+    
+    x = [r1*cos(theta) r2*cos(theta)];
+    y = [r1*sin(theta) r2*sin(theta)];
+    
+    fill(x, y, rand(1,3), 'EdgeColor','k');
+end
+axis equal;
+grid on;
+```
+
+</details>
+
+
 
 kết thúc code ta thấy cũng khá ổn
