@@ -7,7 +7,7 @@
 Tài liệu này tổng hợp các lệnh cơ bản trong MATLAB, thao tác với biến, ma trận, đồ thị 2D và một số bài tập ứng dụng (như giải bài toán động học cơ cấu tay quay con trượt).
 - Bạn có thể thoải mái đóng góp (contribute) hoặc liên kết (fork) dự án này.
 - Có thể tìm hiều thêm viết bằng ngôn ngữ Markdown để ghi chú, note,... rất dễ để viết.
-- Vô đây để bình luận [Bình luận](https://github.com/Agatha-Belle-atb/Toan_Mo_phong_and_Matlab/issues)
+- Vô đây để bình [Bình luận](https://github.com/Agatha-Belle-atb/Toan_Mo_phong_and_Matlab/issues)
 ---
 Gồm 7 chương
 # 📑 Mục lục
@@ -43,7 +43,7 @@ Gồm 7 chương
 
 ## Chương 1: Vai trò của mô hình hóa hệ thống
 
-[Slide Chương 1](file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C1.pdf)
+[Slide Chương 1](#file_Tai_Lieu/MATLAB VÀ ỨNG DỤNG_C1.pdf)
 
 ### 1.1. Khái niệm mở đầu
 
