@@ -132,42 +132,58 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 ### I. Khai báo Vector và Ma trận
 
 #### 3.1. Khai báo vecto hàng
+
 ***Được cách nhau dấu phẩy hoặc khoảng trống***  
 
 - Khai báo **trực tiếp**:  
-`x=[8 9 10]` khai báo bằng **khoảng trống**
-`x=[7,8,11]` khai báo bằng **dấu phẩy**
+`x=[8 9 10]` khai báo bằng **khoảng trống**  
+`x=[7,8,11]` khai báo bằng **dấu phẩy**  
+
 - Khai báo **tự động**:  
-+dấu 2 chấm: bắt đầu : Bước nhảy : Kết thúc (Bắt đầu:Kết thúc)  
-(Bước nhảy : quy luật của dãy số)  
-0:5:100 --> dùng để lấy mẫu dữ liệu  
-x=0:5:100  
-+dùng lệnh limspace: limspace(bắt đầu,kết thúc,sluong số hạn)  
- x=linspace(0,100,20)  
-+logspace(a,b,n): dùng để vẽ biểu đồ bode trong matlap(a,b: 10 mũ a,,,)  
-logspace(1,3,3): 10^1,10^2,chia 3 điểm:10 100 1000  
+  - Dùng dấu 2 chấm:
+    - Bắt đầu : Bước nhảy : Kết thúc
+       >x = 0:5:100
+    - Bắt đầu : Kết thúc
+      >x = 0:100
+    - Bước nhảy : quy luật của dãy số  
+ 
+  - Dùng lệnh `limspace`: limspace(bắt đầu,kết thúc,số lượng số hạn)  
+    >x=linspace(0,100,20)  
+  - `logspace(a,b,n)`: dùng để vẽ biểu đồ bode trong matlap (a,b: 10 mũ a,,,)  
+    >logspace(1,3,3): 10^1, 10^2, chia 3 điểm:10 100 1000  
 
-- Khai báo vecto cột:  
-***mở ngoặc vuông và khai báo từng phần tử***
-trong cùng 1 hàng, cách nhau dấu phẩy hoặc khoảng trắng, các hàng cách nhau bởi dấu chấm phẩy hoặc xuống dòng  
-y=[1;3;5]  
-rand: ma trận gồm các số ngẫu nhiên(0<x<1)  
-rand(kích thước ma trận)  
-rand(2,3):2 hàng 3 cột  
-rand(2): 2 hàng 2 cột  
-randi:Tạo ra ma trận ngẫu nhiên, thành phần trong ma trận là số nguyên  
-randi([0,10],2): 2 hàng, 2 cột, số nguyên  
-tạo ra ma trận ngẫu nhiên 4x4
-rand(4)   % Ma trận vuông 2 hàng, 2 cột
+#### 3.2. Khai báo vecto cột
+***Mở ngoặc vuông và khai báo từng phần tử*** trong cùng 1 hàng, cách nhau dấu phẩy hoặc khoảng trắng, các hàng cách nhau bởi dấu chấm phẩy hoặc xuống dòng  
+`y = [1;3;5]`: Các hàng cách bằng dấu chấm phẩy.  
+`y = [1 2 3]`: Các hàng cách bằng `Enter`
 
-#### MỘT SỐ MA TRẬN ĐẶC BIỆT  
-eye(3,3): tạo ma trận đơn vị  
-ones: tạo ma trận mà tất cả phần tử đều nhận giá trị 1  
-zeros: tạo ma trận mà tất cả phần tử đều nhận giá trị 0  
-diag(vecto đường chéo): tạo ma trận đường chéo  
-Khai báo vecto ở trong dấu ngoặc vuông  
-diag([3 5 7])  
-THAO TÁC TRÊN VECTO VÀ MA TRẬN  
+$$
+y =\begin{bmatrix} 
+1 \\ 
+2 \\ 
+3
+\end{bmatrix}
+$$
+
+`rand:` ma trận gồm các số ngẫu nhiên(0<x<1)  
+`rand(kích thước ma trận)`  
+`rand(2,3)`: 2 hàng 3 cột  
+`rand(2)`: 2 hàng 2 cột  
+`randi`: Tạo ra ma trận ngẫu nhiên, thành phần trong ma trận là số nguyên  
+`randi([0,10],2)`: 2 hàng, 2 cột, số nguyên  
+- tạo ra ma trận ngẫu nhiên 4x4:  
+`rand(4)`   % Ma trận vuông 2 hàng, 2 cột
+
+#### 3.3. Một số Ma trận đặc biệt
+
+- `eye(3,3)`: tạo ma trận đơn vị  
+- `ones`: tạo ma trận mà tất cả phần tử đều nhận giá trị 1  
+- `zeros`: tạo ma trận mà tất cả phần tử đều nhận giá trị 0  
+- `diag(vecto đường chéo)`: tạo ma trận đường chéo  
+- Khai báo vecto ở trong dấu ngoặc vuông:`diag([3 5 7])`
+
+#### 3.4. Thao tác trên Vecto và Ma trận
+
 +Gọi tên mảng(vị trí dữ liệu cần truy xuất)  
                (Hàng, cột    chỉ số)(đánh số theo cột)  
 A=[3 7 9;6 2 4]  
@@ -181,6 +197,7 @@ C(:, [2 4])
 C(:,2:2:4)  
 
 ### II. Thao tác và Truy xuất dữ liệu
+
 THAO TÁC TRÊN WEB VÀ MA TRẬN  
 size(x): trả về kích thước của ma trận(số hàng và số cột)  
 length(x): tìm kiếm chiều dài của vecto x (Kích thước của vecto 	
@@ -202,28 +219,27 @@ format rat: hiển thị phân số
 X3.^2: thêm dấu chấm trc pt để dùng hàm mũ  
 
 TÌM GIÁ TRỊ LỚN NHẤT, NHỎ NHẤT:Thao tác theo cột(cột 11+cột 12)  
-sum(A):   
-sum(sum(A): cho phép tính tổng các phần tử của A  
-min(A): tìm phần tử bé nhất trên mảng A  
+`sum(A)`: cho phép tính tổng các phần tử của A  
+`min(A)`: tìm phần tử bé nhất trên mảng A  
 
 ### IV. Phép toán Quan hệ và Logic
 
-ĐÚNG LÀ TRẢ VỀ 1, SAI LÀ 0(LOGIC)  
-2>0--> đúng-->trả về 1(sai trả về 0)  
-A>2: lấy từng pt của mảng A so sánh với 2  
-so sánh bằng nhau: `==`, không bằng: `~=`  
+***ĐÚNG*** LÀ TRẢ VỀ ***1***, ***SAI*** LÀ TRẢ VỀ ***0*** (LOGIC)  
+`2>0`&rarr; **Đúng** &rarr; **1** (sai trả về 0)  
+`A>2`: lấy từng phần tử của mảng `A` so sánh với 2  
+so sánh **bằng nhau**: `==`, không bằng: `~=`  
 và `&` , hoặc `|`, không `~`   
 
-any()tìm trong ma trận A có bất kì ptu nào có gtri bằng 0 hay không  
+`any()`: Tìm trong ma trận A có bất kì ptu nào có gtri bằng 0 hay không  
 Thao tác trên các cột, tìm trên mảng A khác 0-->trả về 1  
-all(A): tìm trên mảng A, mỗi cột có khác 0 hay k  
+`all(A)`: tìm trên mảng A, mỗi cột có khác 0 hay k  
 có 1 pt khác 0, 1 pt bằng 0--> trả về 0  
-find(A): tìm theo dk logic,  
-find(A>4):tìm trong mảng A các pt lớn hơn 4,  
+`find(A)`: tìm theo dk logic,  
+`find(A>4)`:tìm trong mảng A các pt lớn hơn 4,  
 trả về vị trí của pt thõa mãn dk logic ở bên trong.  
 không trả về số, trả về chỉ số, vị trí (các đánh chỉ số(theo cột)  
-exist(a): ktr mảng a, nếu có-->1, không->0  
-isempty(A): trả về mảng có giá trị hay mảng rỗng  
+`exist(a)`: ktr mảng a, nếu có-->1, không->0  
+`isempty(A)`: trả về mảng có giá trị hay mảng rỗng  
 
 ## Chương 4: Lập trình trong MATLAB 
 
