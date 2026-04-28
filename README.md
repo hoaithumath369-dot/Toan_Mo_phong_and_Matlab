@@ -142,7 +142,7 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 - Khai báo **tự động**:  
   - Dùng dấu 2 chấm:
     - Bắt đầu : Bước nhảy : Kết thúc
-       >x = 0:5:100
+      >x = 0:5:100
     - Bắt đầu : Kết thúc
       >x = 0:100
     - Bước nhảy : quy luật của dãy số  
@@ -154,14 +154,18 @@ MATLAB có đặc điểm là <big> **không cần khai báo kiểu dữ liệu*
 
 #### 3.2. Khai báo vecto cột
 ***Mở ngoặc vuông và khai báo từng phần tử*** trong cùng 1 hàng, cách nhau dấu phẩy hoặc khoảng trắng, các hàng cách nhau bởi dấu chấm phẩy hoặc xuống dòng  
-`y = [1;3;5]`: Các hàng cách bằng dấu chấm phẩy.  
-`y = [1 2 3]`: Các hàng cách bằng `Enter`
-
+  - `y = [1;3;5]`: Các hàng cách bằng dấu chấm phẩy.  
+  - Các hàng cách bằng `Enter`:
+```matlab
+y = [1 4 8
+     2 1 9
+     3 6 2]
+```
 $$
 y =\begin{bmatrix} 
-1 \\ 
-2 \\ 
-3
+1 4 8\\ 
+2 1 9\\ 
+3 6 2
 \end{bmatrix}
 $$
 
@@ -185,61 +189,59 @@ $$
 #### 3.4. Thao tác trên Vecto và Ma trận
 
 +Gọi tên mảng(vị trí dữ liệu cần truy xuất)  
-               (Hàng, cột    chỉ số)(đánh số theo cột)  
+(Hàng, cột chỉ số)(đánh số theo cột)  
 A=[3 7 9;6 2 4]  
 A(1,3)->9  
 A(5)->9 (đánh chỉ số)  
- C(1,1:4): 1:4: trả về 1 2 3 4,  
+C(1,1:4): 1:4: trả về 1 2 3 4,  
 hàng 1 cột 1, hàng 1 cột 2,...  
-C(1,: ): tất cả các cột trên hàng1  
-C(:,2): : là tất cả các hàng, 2 là tất cả các cột 2  
+>C(1,: ): tất cả các cột trên hàng 1  
+C(:,2) là tất cả các hàng, 2 là tất cả các cột 2  
 C(:, [2 4])  
 C(:,2:2:4)  
 
 ### II. Thao tác và Truy xuất dữ liệu
 
 THAO TÁC TRÊN WEB VÀ MA TRẬN  
-size(x): trả về kích thước của ma trận(số hàng và số cột)  
-length(x): tìm kiếm chiều dài của vecto x (Kích thước của vecto 	
+`size(x)`: trả về kích thước của ma trận(số hàng và số cột)  
+`length(x)`: tìm kiếm chiều dài của vecto x (Kích thước của vecto 	
 
 ### III. Tính toán với Vector và Ma trận
 
-TẠO VECTO HÀNG--> CHUYỂN VỊ-->CHUYỂN HÀNG THÀNH CỘT  
-y=x'(dùng dấu nháy để chuyển từ hàng thành cột  
-transpose(x): lệnh để chuyển từ cột thành hàng  
-NHÂN MA TRẬN  
-A+B  
-A-B  
-A*B  
-NHÂN TỪNG PHẦN TỬ: A.*B(cùng kích thước)  
-A11*B11, A12*B12,....  
-A./B(A11/B11, A12*/B12,....  
+#### 3.6. TẠO VECTO HÀNG &rarr; CHUYỂN VỊ &rarr; CHUYỂN HÀNG THÀNH CỘT
+  - `y=x'`(dùng dấu nháy để chuyển từ hàng thành cột  
+  - `transpose(x)`: lệnh để chuyển từ cột thành hàng  
+#### 3.7. Phép tính MA TRẬN  
+- `A+B` là **cộng** hai ma trận
+- `A-B` là **trừ** hai ma trận
+- `A*B`  là **nhân** hai ma trận
+- ***NHÂN TỪNG PHẦN TỬ*** `A.*B` **(cùng kích thước)**
+  - `A.*B` là `A11*B11, A12*B12,...`,$a_{nn}*b_{nn}$
+  - `A./B` là `A11/B11, A12*/B12,....`,$a_{nn}/b_{nn}$  
 
-format rat: hiển thị phân số  
-X3.^2: thêm dấu chấm trc pt để dùng hàm mũ  
+  - `format rat`: hiển thị phân số  
+  - `x3.^2`: thêm dấu chấm trước pt để dùng hàm mũ  
 
-TÌM GIÁ TRỊ LỚN NHẤT, NHỎ NHẤT:Thao tác theo cột(cột 11+cột 12)  
-`sum(A)`: cho phép tính tổng các phần tử của A  
-`min(A)`: tìm phần tử bé nhất trên mảng A  
+#### 3.8. TÌM GIÁ TRỊ LỚN NHẤT, NHỎ NHẤT:Thao tác theo cột(cột 11+cột 12)  
+  - `sum(A)`: cho phép tính tổng các phần tử của A  
+  - `min(A)`: tìm phần tử bé nhất trên mảng A  
 
 ### IV. Phép toán Quan hệ và Logic
 
 ***ĐÚNG*** LÀ TRẢ VỀ ***1***, ***SAI*** LÀ TRẢ VỀ ***0*** (LOGIC)  
-`2>0`&rarr; **Đúng** &rarr; **1** (sai trả về 0)  
-`A>2`: lấy từng phần tử của mảng `A` so sánh với 2  
-so sánh **bằng nhau**: `==`, không bằng: `~=`  
-và `&` , hoặc `|`, không `~`   
+  - `2>0`&rarr; **Đúng** &rarr; **1** (sai trả về 0)  
+  - `A>2`: lấy từng phần tử của mảng `A` so sánh với 2  
+  - So sánh **bằng nhau** `==`; **không bằng** `~=`; **và** `&` , **hoặc** `|`, **không** `~`   
 
-`any()`: Tìm trong ma trận A có bất kì ptu nào có gtri bằng 0 hay không  
+  - `any()`: Tìm trong ma trận A có bất kì ptu nào có gtri bằng 0 hay không  
 Thao tác trên các cột, tìm trên mảng A khác 0-->trả về 1  
-`all(A)`: tìm trên mảng A, mỗi cột có khác 0 hay k  
+  - `all(A)`: tìm trên mảng A, mỗi cột có khác 0 hay k  
 có 1 pt khác 0, 1 pt bằng 0--> trả về 0  
-`find(A)`: tìm theo dk logic,  
-`find(A>4)`:tìm trong mảng A các pt lớn hơn 4,  
-trả về vị trí của pt thõa mãn dk logic ở bên trong.  
+  - `find(A)`: tìm theo dk logic,  
+  - `find(A>4)`:tìm trong mảng A các pt lớn hơn 4, trả về vị trí của pt thõa mãn dk logic ở bên trong.  
 không trả về số, trả về chỉ số, vị trí (các đánh chỉ số(theo cột)  
-`exist(a)`: ktr mảng a, nếu có-->1, không->0  
-`isempty(A)`: trả về mảng có giá trị hay mảng rỗng  
+  - `exist(a)`: ktr mảng a, nếu có-->1, không->0  
+  - `isempty(A)`: trả về mảng có giá trị hay mảng rỗng  
 
 ## Chương 4: Lập trình trong MATLAB 
 
