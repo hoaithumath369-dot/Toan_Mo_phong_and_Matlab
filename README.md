@@ -359,7 +359,24 @@ grid on;
 
 [Slide Chương 6](file_Tai_Lieu/MATLAB%20VÀ%20ỨNG%20DỤNG_C6_ÁP%20DỤNG.pdf)
 
-(Nội dung đang được cập nhật...)
+### Hàm Truyền đạt
+
+#### 6.1. fdg
+
+`feedback(đường tiến, đường lùi)`
+
+### II. Khảo sát đặc tính động học của hệ thống
+
+#### 6.2. Vẽ biểu đồ
+
+- Đáp ứng xung: ``
+
+- vẽ biểu đồ bode và tính biên, pha `margin(hàm truyền)`
+- Độ dự biên: "tần số cắt pha"
+- Độ dự trữ pha: "tần số cắt biên"
+
+### Simulink
+
 
 ## Chương 7: SIMULINK và ứng dụng
 (Nội dung đang được cập nhật...)
